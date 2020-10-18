@@ -89,7 +89,7 @@ for document in tqdm(documents,total=len(documents)):
     abs_path = os.path.abspath(document)
     shutil.copy(abs_path,os.path.join(documents_path,document))
     os.unlink(abs_path)
-print("[+] Done Processing Documents ..... \n")
+print("[+] Done Processing Documents .... \n")
 
 print("[+] All tasks completed Sucessfully!")
 print(Style.RESET_ALL)
